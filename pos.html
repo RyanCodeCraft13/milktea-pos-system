@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>POS</title>
 <link rel="stylesheet" href="style.css">
+<title>POS</title>
 </head>
+
 <body>
 
-<h1>Milktea POS</h1>
-<a href="admin.html">Go Admin Panel</a>
+<script src="session.js"></script>
+
+<h1>POS SYSTEM</h1>
+<a href="admin.html">Admin Panel</a>
 
 <div class="container">
-<h2>Add to Cart</h2>
-<input id="product" placeholder="Product Name">
-<input id="price" placeholder="Price">
+
+<input id="product">
+<input id="price">
+
 <button onclick="addCart()">Add</button>
 
 <ul id="cart"></ul>
+
 <h3>Total ₱ <span id="total">0</span></h3>
+
 </div>
 
 <script type="module" src="pos.js"></script>
