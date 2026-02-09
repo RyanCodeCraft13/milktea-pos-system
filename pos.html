@@ -6,25 +6,20 @@
 </head>
 <body>
 
-<div class="pos-container">
+<h1>Milktea POS</h1>
+<a href="admin.html">Go Admin Panel</a>
 
-<div class="left">
-<h2>Milktea POS</h2>
+<div class="container">
+<h2>Add to Cart</h2>
+<input id="product" placeholder="Product Name">
+<input id="price" placeholder="Price">
+<button onclick="addCart()">Add</button>
 
-<input id="barcode" placeholder="Scan Barcode">
-<button onclick="scanProduct()">Add Item</button>
-</div>
-
-<div class="right">
-<h3>Cart</h3>
 <ul id="cart"></ul>
-
-<h2>Total ₱ <span id="total">0</span></h2>
+<h3>Total ₱ <span id="total">0</span></h3>
 </div>
 
-</div>
-
-<script src="app.js"></script>
+<script type="module" src="pos.js"></script>
 
 </body>
 </html>
