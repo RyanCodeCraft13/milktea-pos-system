@@ -1,0 +1,20 @@
+<h1>Inventory</h1>
+
+<input id="item" placeholder="Item">
+<input id="qty" placeholder="Quantity">
+
+<button onclick="addInventory()">Add</button>
+
+<ul id="list"></ul>
+
+<script>
+function addInventory(){
+ let item=document.getElementById("item").value;
+ let qty=document.getElementById("qty").value;
+
+ let li=document.createElement("li");
+ li.innerText=item+" - "+qty;
+
+ document.getElementById("list").appendChild(li);
+}
+</script>
