@@ -1,27 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Login</title>
+<title>Login POS</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="login-box">
-<h2>System Login</h2>
+<h1>🧋 Milktea POS Login</h1>
 
-<input id="username" placeholder="Username">
-<input id="password" type="password" placeholder="Password">
-
-<select id="role">
-<option value="employee">Employee</option>
-<option value="admin">Admin</option>
-</select>
-
+<div class="container">
+<input id="email" placeholder="Email">
+<input id="pass" type="password" placeholder="Password">
 <button onclick="login()">Login</button>
 
+<p>No account? <a href="signup.html">Sign Up</a></p>
 </div>
 
-<script src="auth.js"></script>
+<script type="module" src="auth.js"></script>
 
 </body>
 </html>
