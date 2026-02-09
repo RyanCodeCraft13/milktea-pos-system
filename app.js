@@ -7,10 +7,12 @@ const products={
 let total=0;
 
 function scanProduct(){
+
  let code=document.getElementById("barcode").value;
  let product=products[code];
 
  if(product){
+
   total+=product.price;
 
   let li=document.createElement("li");
