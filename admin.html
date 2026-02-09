@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Admin Back Page</title>
 <link rel="stylesheet" href="style.css">
+<title>Admin</title>
 </head>
+
 <body>
 
-<h1>Admin Inventory</h1>
-<a href="pos.html">Back to POS</a>
+<script src="session.js"></script>
+
+<h1>Inventory Admin</h1>
 
 <div class="container">
-<input id="name" placeholder="Product">
-<input id="price" placeholder="Price">
-<input id="stock" placeholder="Stock">
+
+<input id="name">
+<input id="price">
+<input id="stock">
+
 <button onclick="addProduct()">Add Product</button>
 
 <ul id="list"></ul>
+
 </div>
 
 <script type="module" src="pos.js"></script>
